@@ -1,4 +1,4 @@
-"# html-css" 
+# html-css
 
 linkis importantes 
 
@@ -17,3 +17,7 @@ https://github.com/gustavoguanabara
 
 
 https://favicon.io/favicon-converter/ -> criar favicons
+
+
+ ==================================================hierarquia de titulos==================================================
+ h1 até h6 são nivel de titulos, ex: titulo e subtitulo
