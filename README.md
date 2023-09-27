@@ -21,3 +21,7 @@ https://favicon.io/favicon-converter/ -> criar favicons
 
  ==================================================hierarquia de titulos==================================================
  h1 até h6 são nivel de titulos, ex: titulo e subtitulo
+
+ ==================================================semantica html==================================================
+ html -> semantica 
+ css ->  forma estilo
