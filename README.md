@@ -25,3 +25,8 @@ https://favicon.io/favicon-converter/ -> criar favicons
  ==================================================semantica html==================================================
  html -> semantica 
  css ->  forma estilo
+
+  ==================================================video==================================================
+
+  baixei do pexels
+  handbrake para converter os videos
