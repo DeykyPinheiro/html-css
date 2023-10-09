@@ -30,3 +30,14 @@ https://favicon.io/favicon-converter/ -> criar favicons
 
   baixei do pexels
   handbrake para converter os videos
+
+  ==================================================cores==================================================
+
+site legal pra paleta de cores
+  https://color.adobe.com/pt/create/color-wheel
+
+  legal pra ver em um exemplo de site
+  https://paletton.com
+
+  bom pra sugerir quando tiver perdido
+  https://coolors.co
