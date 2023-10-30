@@ -18,15 +18,43 @@
         apenas o "px" e o "em"
         16px costuma ser o tamanho padrao da letra que é o mesmo que 1em
         */
+
+
+        /* 
+        weight - peso 
+        width - largura
+        height - altura
+        */
+
         body {
             font-family: Arial, Helvetica, sans-serif;
             /* font-family: 'Courier New', Courier, monospace; */
             /* font-size: 16px; */
+            font-weight: 100;
+            font-style: italic;
+            /* valores aceitos como peso: lighter normal bold bolder */
+            /* pode ser numerica tbm, comeca em 100 e vai até  900 (tem as variacoes mais amplas do que as nomeadas)*/
         }
 
+
+        /* 
         h1,
         h2 {
             font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+        } 
+        */
+
+
+        h1 {
+            /*
+            shorthand
+            - font-style -> font-weight -> font-size -> font-family 
+            */
+            font: italic bold 3em "Work Sans", sans-serif;
+
         }
     </style>
 </head>
