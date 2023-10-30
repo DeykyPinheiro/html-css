@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* 
+    personar via id 
+    id em html é "#" em css
+    class em html é "." em css
+*/
+
+body {
+    background-color: rgb(205, 255, 202);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(4, 128, 0);
+}
+
+h2 {
+    color: rgb(73, 109, 71);
+}
+
+
+h1#principal {
+    color: white;
+    background-color: rgb(0, 128, 0);
+    text-align: center;
+}
