@@ -43,3 +43,5 @@ site legal pra paleta de cores
   https://coolors.co
 
   buscando fonts com google fonts: https://fonts.google.com
+
+  usei da font pra baixar uma font externa https://www.dafont.com
