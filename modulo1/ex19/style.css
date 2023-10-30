@@ -4,6 +4,10 @@
     personar via id 
     id em html é "#" em css
     class em html é "." em css
+
+    só posso usar um id por arquivo html, por boas praticas
+    classes podem ser multiplos
+
 */
 
 body {
@@ -17,6 +21,18 @@ h1 {
 
 h2 {
     color: rgb(73, 109, 71);
+}
+
+h2.basico {
+    color: rgb(106, 206, 106);
+}
+
+h2.intermediario {
+    color: rgb(108, 106, 206);
+}
+
+h2.avancado {
+    color: rgb(206, 106, 106);
 }
 
 
