@@ -41,3 +41,5 @@ site legal pra paleta de cores
 
   bom pra sugerir quando tiver perdido
   https://coolors.co
+
+  buscando fonts com google fonts: https://fonts.google.com
