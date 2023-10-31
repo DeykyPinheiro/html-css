@@ -23,15 +23,15 @@ h2 {
     color: rgb(73, 109, 71);
 }
 
-h2.basico {
+.basico {
     color: rgb(106, 206, 106);
 }
 
-h2.intermediario {
+.intermediario {
     color: rgb(108, 106, 206);
 }
 
-h2.avancado {
+.avancado {
     color: rgb(206, 106, 106);
 }
 
