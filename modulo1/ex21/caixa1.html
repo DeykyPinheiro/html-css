@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        body {}
+
+        h1 {
+            background-color: tomato;
+            width: 300px;
+            height: 300px;
+            border-width: 10px;
+            border-style: solid;
+
+            /* esta em ordem dos paddings */
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        a {
+            background-color: chartreuse;
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- por padrao é display block -->
+    <h1>Exemplo de caixa Box Level</h1>
+    <!-- por padrao é display inline-block -->
+    <p>paragrafos tbm são box levels, mas os <a href="#">links</a> são exemplo inline level</p>
+
+</body>
+
+</html>
