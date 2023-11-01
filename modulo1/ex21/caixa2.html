@@ -7,13 +7,14 @@
     <title>Grouping Tags</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Times New Roman', Times, serif;
             background-color: gray;
             margin: 0px;
         }
 
         header {
             background-color: white;
+            border-radius: 10px;
             padding: 10px;
             margin: 10px;
         }
@@ -22,9 +23,13 @@
             background-color: white;
             padding: 10px;
             margin: 10px;
+            /* raio da borda */
+            border-radius: 10px;
         }
 
         footer {
+            border-radius: 10px;
+            margin: 10px;
             background-color: black;
             color: white;
             text-align: center;
@@ -38,13 +43,29 @@
 
         article {
             background-color: lightgray;
+            border-radius: 10px;
+        }
+
+
+        article p {
+            margin-left: 10px;
+            margin-bottom: 10px;
+            text-indent: 20px;
+            margin: 0px;
+        }
+
+        article aside p {
+            color: white;
+            margin-top: 50px;
         }
 
         article>aside {
             background-color: orange;
+            border-radius: 5px;
         }
 
         nav {
+            border-radius: 5px;
             background-color: rgba(255, 166, 0, 0.993);
             padding: 3px;
             /* 
@@ -57,12 +78,16 @@
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.200);
         }
 
+        /* aside {
+            margin-top: 50px;
+        } */
+
         nav>a {
             text-decoration: none;
             color: white;
-            margin-right: 30px;
+            margin-right: 20px;
+            margin-left: 10px;
             /* background-color: rgb(255, 250, 240); */
-
         }
 
         nav>a:hover {
@@ -93,7 +118,8 @@
             <article>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam autem nam, tempore rerum expedita
                     voluptas eaque officiis repellat est inventore repudiandae non deserunt veritatis laboriosam aperiam
-                    recusandae facilis ab aspernatur?</p>
+                    recusandae facilis ab aspernatur?
+                </p>
                 <aside>
                     <p>Escrito por: esse maluco ai</p>
                 </aside>
