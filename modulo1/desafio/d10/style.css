@@ -18,7 +18,6 @@
     --cor4: #1a5c37;
     --cor5: #063d1e;
 
-
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: "Bebas Neue", "cursive";
     --fonte-android: "Android", "cursive";
@@ -35,10 +34,11 @@ body {
 }
 
 header {
-    margin-top: 0px;
     padding-top: 50px;
     text-decoration: none;
     background-image: linear-gradient(to top, var(--cor5), var(--cor2));
+
+    min-height: 150px;
 }
 
 header h1 {
@@ -46,13 +46,16 @@ header h1 {
     padding-bottom: 50px;
     text-align: center;
     color: white;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 header p {
     text-align: center;
     color: white;
     font-weight: lighter;
+    font-size: 1.5em;
+    margin: auto;
+    max-width: 500px;
 }
 
 header nav {
@@ -65,17 +68,40 @@ header nav a {
     color: white;
     font-weight: bold;
     text-decoration: none;
-    margin: 10px;
+    padding: 10px;
 }
 
 header nav a:hover {
-    color: var(--cor5);
+    background-color: var(--cor5);
+    color: var(--cor1);
+}
+
+main img {
+    width: 100%;
+}
+
+main picture img.pequeno {
+    width: 50%;
+    /* padrao é inline, ai para ocupar a linha inteira um uso o block */
+    display: block;
+    margin: auto;
 }
 
 main {
-    margin-left: 200px;
-    margin-right: 200px;
     background-color: white;
+    margin: auto;
+    padding: 20px;
+    /* 
+    na ordem: 
+    1- espalhamento horizontal
+    2- espalhamento vertical 
+    3- espalhamento
+    4- cor
+    */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.500);
+
+    min-width: 300px;
+    max-width: 800px;
 }
 
 
