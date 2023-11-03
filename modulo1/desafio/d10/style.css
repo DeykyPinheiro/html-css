@@ -38,6 +38,8 @@ header {
     text-decoration: none;
     background-image: linear-gradient(to top, var(--cor5), var(--cor2));
 
+
+    min-width: 350px;
     min-height: 150px;
 }
 
@@ -81,11 +83,40 @@ main img {
 }
 
 main picture img.pequeno {
-    width: 50%;
+    /* para nao perder o foco quando aumentar a image */
+    max-width: 350px;
     /* padrao é inline, ai para ocupar a linha inteira um uso o block */
     display: block;
     margin: auto;
 }
+
+div.video {
+    border-radius: 5px;
+    background-color: var(--cor5);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0px;
+
+    /* posicao relativa das divs dentro dela */
+    position: relative;
+    padding-bottom: 60%;
+}
+
+div.video iframe {
+    /* distancia h da div de cima */
+    top: 5%;
+    /* distandia l da div da esquerda */
+    left: 5%;
+
+    /* configuracoes para nao tomar toda a div */
+    width: 90%;
+    height: 90%;
+
+
+    /* ela que manda na div de cima */
+    position: absolute;
+}
+
 
 main {
     background-color: white;
@@ -100,12 +131,13 @@ main {
     */
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.500);
 
-    min-width: 300px;
+    min-width: 310px;
     max-width: 800px;
 }
 
 
 main h1 {
+    font-weight: normal;
     font-family: var(--fonte-android);
     padding-top: 10px;
     color: var(--cor5);
@@ -114,6 +146,7 @@ main h1 {
 }
 
 main h2 {
+    font-weight: normal;
     font-family: var(--fonte-android);
     padding-left: 10px;
     background-color: var(--cor1);
@@ -140,7 +173,7 @@ main p {
 }
 
 #extra h3 {
-    border-radius: 5px;
+    border-radius: 5px 5px 0px 0px;
     color: white;
     background-color: var(--cor4);
     padding-top: 10px;
@@ -155,20 +188,38 @@ main p {
     margin-right: 5px;
 }
 
-#extra ul li abbr {
+#extra ul {
+    /* padrao é outsid 
+    dentro em relacao a caixa*/
+    list-style-position: inside;
+    /* divide em duas colunas arbitrariamente */
+    columns: 2;
+    list-style-type: none;
+    padding-left: 10px;
 
+
+}
+
+#extra ul li abbr {
     text-decoration: none;
+}
+
+footer {
+    min-width: 350px;
 }
 
 footer p {
     background-color: var(--cor5);
     text-align: center;
+    font-weight: bolder;
+    font-size: 0.8em;
     color: white;
     padding: 10px;
 }
 
 footer p a {
     color: white;
+
 }
 
 a {
