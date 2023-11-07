@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+
+
+/* :root {
+     variaveis em css 
+    --cor0: #ebe5c5;
+    --cor1: #84e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Bebas Neue", "cursive";
+    --fonte-android: "Android", "cursive";
+} */
+
+:root {
+    fonte-padrao: Verdana, Geneva, Tahoma, sans-serif
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    min-width: 350px;
+    min-height: 100px;
+    color: white;
+    text-align: center;
+    background-color: black;
+
+    padding-top: 50px;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+header h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header a {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    color: gray;
+}
+
+main {
+    min-width: 350px;
+}
+
+/* section {
+    background-color: tomato;
+    padding-top: 48x;
+    padding-bottom: 48x;
+    padding-left: 30px;
+    height: 300px;
+    width: 400;
+} */
+
+section.container {
+    text-align: left;
+    padding-left: 30px;
+    /* background-color: tomato; */
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+}
+
+section.joaninha {
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.livro {
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.container article {
+    font-size: 3em;
+    /* background-color: blue; */
+    border: 3px solid black;
+    justify-content: left;
+}
+
+.caixinha {
+    padding-top: 10px;
+    padding-left: 30px;
+    width: 30%;
+
+    padding-bottom: 50px;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+
+    font-weight: lighter;
+    font-size: 1.3em;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+footer a:hover {
+    color: gray;
+    text-decoration: underline;
+}
