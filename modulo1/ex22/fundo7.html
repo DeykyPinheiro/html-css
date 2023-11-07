@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        section {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        article {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        #container {
+            /* MAIS FACIL */
+            /*Possui diversas funções (procurem pela documentação), uma delas é habilitar o manejamento do conteúdo*/
+            /*Alinhamento horizontal, ou seja, dispensa o "margin: auto"*/
+            /*Alinhamento vertical*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 96vh;
+
+            background-color: green;
+            height: 500px;
+            padding: 10px;
+
+            /* padrao já é relativo */
+            /* position: relative; */
+        }
+
+        #conteudo {
+
+
+            background-color: tomato;
+            width: 200px;
+            height: 200px;
+
+            /* só isso ja centraliza ao centro horizontal */
+            /* margin: auto; */
+
+
+            /* para centralizar ao verticalmente 
+            quando fazemos isso podemos configurar left e top*/
+            /* position: absolute;
+            left: 50%;
+            top: 50%; */
+
+            /*  traduz o que faco como centralizacao, ai sempre fica centralizado*/
+            /* transform: translate(-50%, -50%); */
+
+        }
+    </style>
+</head>
+
+<body>
+    <section id="container">
+        <article id="conteudo">
+        </article>
+    </section>
+
+</body>
+
+</html>
