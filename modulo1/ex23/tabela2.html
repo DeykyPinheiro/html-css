@@ -48,10 +48,17 @@
                 TR, TD, TH
     -->
 
+
+    <!-- 
+        scope="col" - > diz onde estão os dados de uma coluna ou linha
+        scope="row" -> é um exemplo em total de habitantes
+     -->
+
+    <caption>População das unidades federativas</caption>
     <table>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
         </thead>
         <tbody>
             <tr>
@@ -73,7 +80,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="numero"><strong>260000</strong></td>
             </tr>
         </tfoot>
