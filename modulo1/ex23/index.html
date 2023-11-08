@@ -9,6 +9,12 @@
         table {
             font-family: Arial, Helvetica, sans-serif;
             width: 400px;
+            height: 500px;
+
+            /* alinhamento horizontal */
+
+
+
 
             /* padrao é separate que fica com tudo separado
             com collpase fica igual a uma tabela */
@@ -17,8 +23,6 @@
         }
 
         tr {
-            background-color: aqua;
-
             /* para funcionar tem que por:
             border-collapse: collapse;
             no style da table
@@ -28,9 +32,17 @@
         }
 
         table td {
-        
+            /* alinhamento vertical, top, middle, bottom */
+            vertical-align: top;
+            /* alinhamento horizontal */
+            text-align: center;
+
             padding: 8px;
             border: 1px solid black;
+        }
+
+        .numero{
+            text-align: right;
         }
     </style>
 </head>
@@ -47,7 +59,7 @@
 
     <table>
         <tr>
-            <td>a1</td>
+            <td class="numero">a1</td>
             <td>b1</td>
             <td>c1</td>
         </tr>
