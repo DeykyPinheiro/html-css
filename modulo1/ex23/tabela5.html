@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 300px;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        table td,
+        tr {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        /* colirir a coluna */
+        col.cnome {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Exercicio de tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cidade">
+            <col class="csexo">
+            <col class="cprofissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Profissao</th>
+        </tr>
+        <tr>
+            <td>jorde</td>
+            <td>1</td>
+            <td>M</td>
+            <td>sim</td>
+        </tr>
+        <tr>
+            <td>euro</td>
+            <td>123</td>
+            <td>M</td>
+            <td>Dinheiro</td>
+        </tr>
+        <tr>
+            <td>Lana</td>
+            <td>27</td>
+            <td>F</td>
+            <td>Atriz</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
