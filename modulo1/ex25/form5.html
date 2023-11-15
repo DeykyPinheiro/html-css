@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1>Exemplos de Formulários</h1>
+
+    <form action="cadastro.php" method="get">
+        <!-- no radio só podemos marcar  objeto, não da pra desmarcar, casa queira que os atributos tenha 
+        relacao um com o outro preciso usar o mesmo "name" , caso queira um padrao é só por checked-->
+        <fieldset>
+            <legend>sexo</legend>
+            <input type="radio" name="sexo" id="mas_id" checked>
+            <label for="mas_id">masculino</label>
+
+            <input type="radio" name="sexo" id="fem_id">
+
+            <label for="fem_id">feminino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>esporte favoritos</legend>
+            <input type="checkbox" name="futebol" id="futebol_id">
+            <label for="futebol_id">futebol</label> <br>
+            <input type="checkbox" name="basquete" id="basquete_id">
+            <label for="basquete_id">basquete</label> <br>
+            <input type="checkbox" name="natacao" id="natacao_id">
+            <label for="natacao_id">natacao</label> <br>
+            <input type="checkbox" name="tenis" id="tenis_id">
+            <label for="tenis_id">tenis</label> <br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+
+</html>
