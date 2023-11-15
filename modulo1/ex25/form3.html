@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1>Formulario Teste</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="nome_id">nome</label>
+            <input type="text" name="name" id="nome_id" required minlength="3" maxlength="30"
+                placeholder="digite seu nome">
+        </p>
+        <p>
+            <label for="media_id">Média: </label>
+            <input type="number" name="media" id="media_id" required min="0" max="10" placeholder="0 a 10" step="0.5">
+        </p>
+        <p>
+            <label for="mes_id">mes: </label>
+            <input type="month" name="mes" id="mes_id">
+        </p>
+
+        <p>
+            <label for="dia_id">dia: </label>
+            <input type="date" name="" id="dia_id">
+        </p>
+
+
+        <p>
+            <label for="prova_id">horario da prova: </label>
+            <input type="time" name="prova" id="prova_id">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+
+</body>
+
+</html>
