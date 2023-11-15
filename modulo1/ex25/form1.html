@@ -16,9 +16,18 @@
 
 <body>
     <h1>Meu primeiro Formulario</h1>
+    <!-- autocomplete="off" posso adicionar a form e ai ele para de sugerir -->
     <form action="">
-        <p>nome: <input type="text" name="nome" id="nome"></p>
-        <p>sobrenome: <input type="text" name="sobrenome" id="sobrenome"> </p>
+        <!-- é a lengenda de qual campo -->
+        <p>
+            <label for="nome_id">nome:</label>
+            <input type="text" name="nome" id="nome_id">
+        </p>
+        <!-- é a lengenda de qual campo -->
+        <p>
+            <label for="sobrenome_id">sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome_id">
+        </p>
         <p><input type="submit" value="Enviar"></p>
     </form>
 
