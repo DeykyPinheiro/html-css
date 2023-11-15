@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1>Formulario de cor, range e arquivo</h1>
+
+    <!-- quando passa de 300bites se usa post, get nao suporta-->
+    <form method="post">
+        <p>
+            <label for="color_id">cor: </label>
+            <input type="color" name="color" id="color_id" value="#00ff00">
+        </p>
+
+        <p>
+            <label for="range_id">nivel de satisfacao: </label>
+            <input type="range" name="range" id="range_id" min="0" max="10" value="2" step="2">
+        </p>
+
+        <p>
+            <label for="file_id">arquivo para ser enviado</label>
+            <input type="file" name="file" id="file_id">
+        </p>
+
+
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+
+</html>
