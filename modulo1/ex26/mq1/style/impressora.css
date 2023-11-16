@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* estilo impressora */
+
+* {
+    padding: 10px;
+    margin: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    /* espacamento entre linhas */
+    line-height: 1.5em;
+}
+
+/* nao exibir quando for imprimir */
+menu {
+    display: none;
+}
+
+
+/* mostra a data da impressa */
+article::after {
+    content: "esse artigo foi impresso: ";
+}
+
+
+article {
+    width: 100%;
+
+}
