@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.php" method="get">
+        <!-- posso usar essa selecao para estados por exemplo -->
+        <p>
+            <label for="estado_id">estado</label>
+            <select name="estado" id="estado_id">
+                <!-- posso agrupar os selects por grupos -->
+
+                <optgroup label="suldeste">
+                    <!-- para ja deixa selecionado -->
+                    <option value="sp" selected>sao paulo</option>
+                    <option value="rj">rio de janeiro</option>
+                </optgroup>
+
+                <optgroup label="nordeste">
+                    <option value="pb">pernambuco</option>
+                    <option value="ma">maranhao</option>
+                </optgroup>
+            </select>
+        </p>
+
+
+        <p>
+            <!-- lista que ja tem predefinicao mas que posso aceitar mais opcoes -->
+            <label for="profissao_id">profissao: </label>
+            <input type="text" name="profissao" id="profissao_id" list="list_profissao">
+            <datalist id="list_profissao">
+                <option>admin</option>
+                <option>dev</option>
+                <option>cont</option>
+            </datalist>
+        </p>
+
+
+        <!-- mandar sempre por post quando tiver textarea já que em tese é campo é infinito -->
+        <p>
+            <label for="msg_id">msg: </label>
+            <textarea name="msg" id="msg_id" cols="30" rows="10" placeholder="digite sua mensagem aqui"></textarea>
+
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+
+</html>
