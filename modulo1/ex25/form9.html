@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ppt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+</head>
+
+<body>
+    <h1>Formulario de Exemplo</h1>
+    <!-- aprendendo sobre o output -->
+
+    <form action="cadastro.php" method="get">
+
+        <p>
+            <label for="range_id">numero: </label>
+            <input type="range" name="range" id="range_id" max="10" min="0" value="1"
+                oninput="range_id.innerHTML = Number(range_id.value)">
+            <!-- mostrar o valor que foi selecionado -->
+            <output id="range_id">0</output>
+        </p>
+
+
+        <p>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+
+</body>
+
+</html>

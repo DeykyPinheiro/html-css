@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+</head>
+
+<body>
+    <h1>Formulario de Exemplo</h1>
+    <!-- aprendendo sobre o output -->
+
+
+    <!-- innerHTML primeira vez usado, serve pra eu atribuir um valor para ele -->
+    <form action="" method="get">
+        <p>
+            <label for="numero1_id">numero 1: </label>
+            <input type="number" name="numero1" id="numero1_id" max="10" min="0" required step="1"
+                oninput="soma_id.innerHTML = Number(numero1.value) + Number(numero2.value)">
+        </p>
+
+        <p>
+            <label for="numero2_id">numero 2: </label>
+            <input type="number" name="numero2" id="numero2_id" max="10" min="0" required step="1"
+                oninput="soma_id.innerHTML = Number(numero1.value) + Number(numero2.value)">
+        </p>
+
+
+        <!-- cada input pega o valor atual de soma_id e soma com seu determinado valor e modifica o saida -->
+        <p>
+            <label for="soma_id">soma: </label>
+            <output id="soma_id">0</output>
+        </p>
+
+        <p>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+
+</body>
+
+</html>

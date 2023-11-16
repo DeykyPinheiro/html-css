@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ppt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+</head>
+
+<body>
+    <h1>Formulario de Exemplo</h1>
+    <!-- primeira vez usando js no curso -->
+
+
+    <form action="cadastro.php" method="get">
+
+        <p>
+            <label for="ano_id">ano de nascimento: </label>
+            <!-- passando uma funcao em js no script -->
+            <input type="number" name="ano" id="ano_id" min="1930" max="2200" oninput="calcIdade()">
+        </p>
+
+        <p>
+            <label for="idade_id">sua idade é: </label>
+            <output id="idade_id">0</output>
+        </p>
+
+
+        <p>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+
+    <script>
+        // funcao que calcula a idade e atualiza o valor do id
+        function calcIdade() {
+            let atual = new Date().getFullYear();
+            idade_id.innerHTML = Number(atual) - Number(ano_id.value)
+        }
+    </script>
+
+</body>
+
+</html>
