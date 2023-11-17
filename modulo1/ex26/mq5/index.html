@@ -15,7 +15,9 @@
     https://fonts.google.com/icons?selected=Material+Icons:menu:&icon.query=navigation 
 -->
 
-<body>
+<!-- onresize quando mudar o tamanho -->
+
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <!-- icone qu eu puxei do google -->
@@ -66,6 +68,16 @@
                 itens.style.display = "none";
             } else {
                 itens.style.display = "block";
+            }
+        }
+
+        // window.innerWidth -> largura da janela
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = "block";
+            }
+            else {
+                itens.style.display = "none";
             }
         }
     </script>
