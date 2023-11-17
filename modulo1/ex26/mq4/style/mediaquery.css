@@ -1,3 +1,90 @@
 @charset "UFT-8";
 
-/* demais midias */
+/* 
+    typical devices breakpoints 
+    pequenas telas - até 600px
+    celular - 600px até 768px
+    tablet - 768px até 992px
+    desktop - 992px atte 1200px
+    tv - acima de  1200px
+    grandes telas:
+*/
+
+
+/* não preciso fazer até 768 pq fiz mobile first */
+
+/* impressora */
+@media print {
+    body {
+        /* nao imprime background */
+        /* background-image: url(../../imagens/back-print.jpg); */
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    main {
+        text-shadow: none;
+        color: black;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: "feita na impressora";
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#print {
+        display: block;
+    }
+
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../../imagens/back-tablet.jpg);
+
+    }
+
+    img#tablet {
+        display: block;
+    }
+
+    img#phone {
+        display: none;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 993px) and (max-width:1200px) {
+    body {
+        background-image: url(../../imagens/back-pc.jpg);
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#pc {
+        display: block;
+    }
+}
+
+/* grandes telas */
+@media screen and (min-width: 1201px) {
+    body {
+        background-image: url(../../imagens/back-tv.jpg);
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tv {
+        display: block;
+    }
+
+}
