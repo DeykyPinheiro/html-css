@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+@media all {
+    * {
+        padding: 0px;
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html,
+    body {
+        background-color: lightgray;
+    }
+
+    #burguer {
+        background-color: rgb(0, 0, 0.5);
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        /* vira  a maozinha quano ta em cima */
+        cursor: pointer;
+    }
+
+    menu{
+        display: none;
+    }
+
+
+    #burguer:hover {
+        background-color: white;
+        color: black;
+    }
+
+    header {
+        background-color: gray;
+        margin-bottom: 20px;
+    }
+
+    header h1 {
+        text-align: center;
+        height: 60px;
+        padding-top: 10px;
+    }
+
+    header menu ul li {
+        background-color: rgba(0, 0, 0, 0.4);
+        display: block;
+        text-align: center;
+        border: 2px solid black;
+    }
+
+    header menu ul li {
+        padding: 10px;
+    }
+
+    header menu ul li a {
+        text-decoration: none;
+        color: white;
+
+    }
+
+    header menu ul li:hover {
+        background-color: gray;
+
+    }
+
+    main {
+        background-color: white;
+        margin: auto;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+
+
+
+    article h1 {
+        text-align: center;
+    }
+
+    article p {
+        padding: 10px;
+        text-align: justify;
+        text-indent: 20px;
+    }
+
+
+
+}
