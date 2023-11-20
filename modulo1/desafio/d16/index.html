@@ -18,18 +18,20 @@
                 <h1>Login</h1>
                 <p>seja bem vindo(a) novamente. faça login para acessar sua conta e fazer configurações no ambiente</p>
                 <form action="cadastro.php" method="post">
-                    <p>
 
-                        <label for="usuario_id"> <span class="material-symbols-outlined">person</span> </label>
+
+                    <p class="campos">
+                        <label for="usuario_id"> <span class="material-symbols-outlined" cols="30">person</span>
+                        </label>
                         <input type="text" name="usuario" id="usuario_id" placeholder="digite seu usuario" required
                             maxlength="150">
                     </p>
 
-                    <p>
+                    <p class="campos">
 
-                        <label for="senha_id"> <span class="material-symbols-outlined">key</span></label>
-                        <input type="password" name="senha" id="senha_id" placeholder="Digite sua senha" required minlength="8"
-                            maxlength="100">
+                        <label for="senha_id"> <span class="material-symbols-outlined" cols="30">key</span></label>
+                        <input type="password" name="senha" id="senha_id" placeholder="Digite sua senha" required
+                            minlength="8" maxlength="100">
                     </p>
 
 

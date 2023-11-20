@@ -70,17 +70,35 @@
         padding: 10px;
     }
 
+
     .entrar {
-        padding-top: 8px;
         display: block;
         margin: auto;
+        font-size: 1.5em;
+        background-color: var(--c4);
+        color: white;
+        width: 25%;
+        border-radius: 10px;
+
     }
+
+    .entrar:hover {
+        background-color: var(--c3)
+    }
+
+
 
     .esqueci {
         padding-top: 8px;
         display: block;
         text-align: center;
     }
+
+    .esqueci:hover {
+        color: gray;
+    }
+
+
 
 }
 
@@ -89,7 +107,7 @@
 
     main {
         align-items: center;
-        height: 400px;
+
         margin: auto;
         width: 80vw;
 
@@ -102,6 +120,6 @@
     main {
         width: 900px;
         height: 600px;
-        border-radius: 12px;
+        border-radius: 20px;
     }
 }
